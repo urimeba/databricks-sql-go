@@ -6,19 +6,19 @@ import (
 	"io"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/internal/config"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
 	"github.com/pierrec/lz4/v4"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
 
 	"net/http"
 
 	"github.com/apache/arrow/go/v12/arrow/ipc"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/fetcher"
-	"github.com/databricks/databricks-sql-go/logger"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/internal/fetcher"
+	"github.com/urimeba/databricks-sql-go/logger"
 )
 
 type BatchIterator interface {

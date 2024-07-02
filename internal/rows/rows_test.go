@@ -13,11 +13,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	dbsqlrows "github.com/databricks/databricks-sql-go/rows"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/client"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
+	dbsqlrows "github.com/urimeba/databricks-sql-go/rows"
 
 	"github.com/stretchr/testify/assert"
 )

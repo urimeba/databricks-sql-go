@@ -5,11 +5,11 @@ import (
 	"io"
 
 	"github.com/apache/arrow/go/v12/arrow"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerr "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	"github.com/databricks/databricks-sql-go/rows"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
+	"github.com/urimeba/databricks-sql-go/rows"
 )
 
 func NewArrowRecordIterator(ctx context.Context, rpi rowscanner.ResultPageIterator, bi BatchIterator, arrowSchemaBytes []byte, cfg config.Config) rows.ArrowBatchIterator {

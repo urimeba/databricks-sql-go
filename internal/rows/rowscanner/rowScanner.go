@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	dbsqlrows "github.com/databricks/databricks-sql-go/rows"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	dbsqlrows "github.com/urimeba/databricks-sql-go/rows"
 )
 
 // RowScanner is an interface defining the behaviours that are specific to

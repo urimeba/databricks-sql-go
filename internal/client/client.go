@@ -19,17 +19,17 @@ import (
 	"strings"
 	"time"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	"github.com/databricks/databricks-sql-go/logger"
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/auth"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	"github.com/urimeba/databricks-sql-go/logger"
 )
 
 // RecordResults is used to generate test data. Developer should change this manually

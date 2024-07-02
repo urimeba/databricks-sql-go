@@ -9,16 +9,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/oauth/m2m"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/urimeba/databricks-sql-go/auth"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/m2m"
+	"github.com/urimeba/databricks-sql-go/auth/pat"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/client"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/logger"
 )
 
 type connector struct {
@@ -79,7 +79,7 @@ func (c *connector) Connect(ctx context.Context) (driver.Conn, error) {
 
 // Driver returns underlying databricksDriver for compatibility with sql.DB Driver method
 func (c *connector) Driver() driver.Driver {
-	return &databricksDriver{}
+	return &DatabricksDriver{}
 }
 
 var _ driver.Connector = (*connector)(nil)

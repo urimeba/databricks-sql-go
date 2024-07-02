@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
 )
 
 func TestDbSqlErrors(t *testing.T) {

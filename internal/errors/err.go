@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
 )
 
 // value to use with errors.Is() to determine if an error

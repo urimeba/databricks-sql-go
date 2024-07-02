@@ -12,16 +12,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/rows"
-	"github.com/databricks/databricks-sql-go/internal/sentinel"
-	"github.com/databricks/databricks-sql-go/logger"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/client"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/internal/rows"
+	"github.com/urimeba/databricks-sql-go/internal/sentinel"
+	"github.com/urimeba/databricks-sql-go/logger"
 )
 
 type conn struct {

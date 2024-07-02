@@ -18,9 +18,9 @@ import (
 
 	"github.com/pkg/browser"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/oauth"
 	"github.com/rs/zerolog/log"
+	"github.com/urimeba/databricks-sql-go/auth"
+	"github.com/urimeba/databricks-sql-go/auth/oauth"
 	"golang.org/x/oauth2"
 )
 

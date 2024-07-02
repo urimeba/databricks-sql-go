@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	dbsql "github.com/databricks/databricks-sql-go"
 	"github.com/joho/godotenv"
+	dbsql "github.com/urimeba/databricks-sql-go"
 )
 
 func main() {

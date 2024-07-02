@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/auth/noop"
-	"github.com/databricks/databricks-sql-go/auth/oauth/m2m"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/auth/noop"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/m2m"
+	"github.com/urimeba/databricks-sql-go/auth/pat"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
 )
 
 func TestParseConfig(t *testing.T) {

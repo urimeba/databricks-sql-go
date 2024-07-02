@@ -8,10 +8,10 @@ import (
 	"os"
 	"time"
 
-	dbsql "github.com/databricks/databricks-sql-go"
-	"github.com/databricks/databricks-sql-go/auth/oauth/m2m"
-	"github.com/databricks/databricks-sql-go/auth/oauth/u2m"
 	"github.com/joho/godotenv"
+	dbsql "github.com/urimeba/databricks-sql-go"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/m2m"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/u2m"
 )
 
 func main() {

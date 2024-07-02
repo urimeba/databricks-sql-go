@@ -8,10 +8,10 @@ import (
 	"os"
 	"time"
 
-	_ "github.com/databricks/databricks-sql-go"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
 	"github.com/joho/godotenv"
+	_ "github.com/urimeba/databricks-sql-go"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 func main() {

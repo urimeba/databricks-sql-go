@@ -7,9 +7,9 @@ import (
 
 	"github.com/apache/arrow/go/v12/arrow"
 	"github.com/apache/arrow/go/v12/arrow/array"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 // Abstraction for holding the values for a set of rows

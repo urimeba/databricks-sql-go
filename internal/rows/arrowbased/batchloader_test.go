@@ -14,11 +14,11 @@ import (
 	"github.com/apache/arrow/go/v12/arrow/array"
 	"github.com/apache/arrow/go/v12/arrow/ipc"
 	"github.com/apache/arrow/go/v12/arrow/memory"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
 )
 
 func TestCloudURLFetch(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"database/sql/driver"
 
-	"github.com/databricks/databricks-sql-go/internal/config"
-	_ "github.com/databricks/databricks-sql-go/logger"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	_ "github.com/urimeba/databricks-sql-go/logger"
 )
 
 func init() {

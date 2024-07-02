@@ -4,11 +4,12 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	dbsql "github.com/databricks/databricks-sql-go"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
+	dbsql "github.com/urimeba/databricks-sql-go"
 )
 
 type row struct {

@@ -17,7 +17,7 @@ See `doc.go` for full documentation or the Databrick's documentation for [SQL Dr
 import (
   "context"
   "database/sql"
-  _ "github.com/databricks/databricks-sql-go"
+  _ "github.com/urimeba/databricks-sql-go"
 )
 
 db, err := sql.Open("databricks", "token:********@********.databricks.com:443/sql/1.0/endpoints/********")
@@ -31,7 +31,7 @@ rows, err := db.QueryContext(context.Background(), "SELECT 1")
 defer rows.Close()
 ```
 
-Additional usage examples are available [here](https://github.com/databricks/databricks-sql-go/tree/main/examples).
+Additional usage examples are available [here](https://github.com/urimeba/databricks-sql-go/tree/main/examples).
 
 ### Connecting with DSN (Data Source Name)
 
@@ -58,7 +58,7 @@ You can also connect with a new connector object. For example:
 ```go
 import (
 "database/sql"
-  _ "github.com/databricks/databricks-sql-go"
+  _ "github.com/urimeba/databricks-sql-go"
 )
 
 connector, err := dbsql.NewConnector(
@@ -104,4 +104,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-[Apache 2.0](https://github.com/databricks/databricks-sql-go/blob/main/LICENSE)
+[Apache 2.0](https://github.com/urimeba/databricks-sql-go/blob/main/LICENSE)

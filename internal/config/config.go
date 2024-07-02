@@ -10,17 +10,17 @@ import (
 	"strings"
 	"time"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
 	"github.com/pkg/errors"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/noop"
-	"github.com/databricks/databricks-sql-go/auth/oauth/m2m"
-	"github.com/databricks/databricks-sql-go/auth/oauth/u2m"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/urimeba/databricks-sql-go/auth"
+	"github.com/urimeba/databricks-sql-go/auth/noop"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/m2m"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/u2m"
+	"github.com/urimeba/databricks-sql-go/auth/pat"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/logger"
 )
 
 // Driver Configurations.

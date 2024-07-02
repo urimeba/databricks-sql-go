@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/internal/client"
 	"github.com/pkg/errors"
+	"github.com/urimeba/databricks-sql-go/internal/client"
 )
 
 const (

@@ -9,17 +9,17 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	dbsqlclient "github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerr_int "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/rows/arrowbased"
-	"github.com/databricks/databricks-sql-go/internal/rows/columnbased"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
-	dbsqlrows "github.com/databricks/databricks-sql-go/rows"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	dbsqlclient "github.com/urimeba/databricks-sql-go/internal/client"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	dbsqlerr_int "github.com/urimeba/databricks-sql-go/internal/errors"
+	"github.com/urimeba/databricks-sql-go/internal/rows/arrowbased"
+	"github.com/urimeba/databricks-sql-go/internal/rows/columnbased"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
+	dbsqlrows "github.com/urimeba/databricks-sql-go/rows"
 )
 
 // rows implements the following interfaces from database.sql.driver

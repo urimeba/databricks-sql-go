@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
 )
 
 type Parameter struct {

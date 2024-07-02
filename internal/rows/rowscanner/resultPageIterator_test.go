@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
 	"github.com/stretchr/testify/assert"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/client"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 func TestFetchResultPageination(t *testing.T) {

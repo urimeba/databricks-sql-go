@@ -8,9 +8,9 @@ import (
 	"os"
 	"strconv"
 
-	dbsql "github.com/databricks/databricks-sql-go"
-	"github.com/databricks/databricks-sql-go/driverctx"
 	"github.com/joho/godotenv"
+	dbsql "github.com/urimeba/databricks-sql-go"
+	"github.com/urimeba/databricks-sql-go/driverctx"
 )
 
 func main() {

@@ -8,7 +8,7 @@ Clients should use the database/sql package in conjunction with the driver:
 	import (
 		"database/sql"
 
-		_ "github.com/databricks/databricks-sql-go"
+		_ "github.com/urimeba/databricks-sql-go"
 	)
 
 	func main() {
@@ -55,7 +55,7 @@ Use sql.OpenDB() to create a database handle via a new connector object created 
 
 	import (
 		"database/sql"
-		dbsql "github.com/databricks/databricks-sql-go"
+		dbsql "github.com/urimeba/databricks-sql-go"
 	)
 
 	func main() {
@@ -124,8 +124,8 @@ By default, logging level is `warn`. If you want to disable logging, use `disabl
 The user can also utilize Track() and Duration() to custom log the elapsed time of anything tracked.
 
 	import (
-		dbsqllog "github.com/databricks/databricks-sql-go/logger"
-		dbsqlctx "github.com/databricks/databricks-sql-go/driverctx"
+		dbsqllog "github.com/urimeba/databricks-sql-go/logger"
+		dbsqlctx "github.com/urimeba/databricks-sql-go/driverctx"
 	)
 
 	func main() {
@@ -159,7 +159,7 @@ The result log may look like this:
 Use the driverctx package under driverctx/ctx.go to add callbacks to the query context to receive the connection id and query id.
 
 	import (
-		"github.com/databricks/databricks-sql-go/driverctx"
+		"github.com/urimeba/databricks-sql-go/driverctx"
 	)
 
 	func main() {
@@ -224,7 +224,7 @@ Example usage:
 	import (
 		fmt
 		errors
-		dbsqlerr "github.com/databricks/databricks-sql-go/errors"
+		dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
 	)
 
 	func main() {
@@ -282,7 +282,7 @@ Example usage:
 
 	import (
 		...
-		dbsqlrows "github.com/databricks/databricks-sql-go/rows"
+		dbsqlrows "github.com/urimeba/databricks-sql-go/rows"
 	)
 
 	func main() {

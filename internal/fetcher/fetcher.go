@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 type FetchableItems[OutputType any] interface {

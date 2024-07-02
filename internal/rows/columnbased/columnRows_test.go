@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
 	"github.com/stretchr/testify/assert"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
 )
 
 func TestNRowsColumnRowScanner(t *testing.T) {

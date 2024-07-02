@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/internal/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/urimeba/databricks-sql-go/auth/pat"
+	"github.com/urimeba/databricks-sql-go/internal/config"
 )
 
 func TestOOpenConnector(t *testing.T) {
@@ -27,7 +27,7 @@ func TestOOpenConnector(t *testing.T) {
 		expectedCfg := config.WithDefaults()
 		expectedCfg.UserConfig = expectedUserConfig.WithDefaults()
 		expectedCfg.DriverVersion = DriverVersion
-		d := &databricksDriver{}
+		d := &DatabricksDriver{}
 		c, err := d.OpenConnector(fmt.Sprintf("token:%s@%s:%d/%s", accessToken, host, port, httpPath))
 		require.NoError(t, err)
 		coni, ok := c.(*connector)

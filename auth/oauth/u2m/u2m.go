@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/databricks/databricks-sql-go/auth/oauth"
-	"github.com/databricks/databricks-sql-go/auth/oauth/pkce"
+	"github.com/urimeba/databricks-sql-go/auth/oauth"
+	"github.com/urimeba/databricks-sql-go/auth/oauth/pkce"
 	"golang.org/x/oauth2"
 )
 

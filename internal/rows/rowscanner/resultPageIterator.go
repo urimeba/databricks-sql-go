@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	"github.com/urimeba/databricks-sql-go/driverctx"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 var errRowsResultFetchFailed = "databricks: Rows instance failed to retrieve results"

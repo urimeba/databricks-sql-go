@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
 	"github.com/stretchr/testify/assert"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
 )
 
 func TestParameter_Inference(t *testing.T) {

@@ -8,12 +8,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
 	"github.com/stretchr/testify/assert"
+	"github.com/urimeba/databricks-sql-go/internal/cli_service"
+	"github.com/urimeba/databricks-sql-go/internal/client"
+	"github.com/urimeba/databricks-sql-go/internal/config"
+	"github.com/urimeba/databricks-sql-go/internal/rows/rowscanner"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 func TestArrowRecordIterator(t *testing.T) {

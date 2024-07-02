@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql/driver"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
+	dbsqlerr "github.com/urimeba/databricks-sql-go/errors"
+	dbsqlerrint "github.com/urimeba/databricks-sql-go/internal/errors"
 )
 
 type stmt struct {

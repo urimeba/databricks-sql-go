@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
 	"github.com/stretchr/testify/assert"
+	dbsqllog "github.com/urimeba/databricks-sql-go/logger"
 )
 
 func TestHandlingDateTime(t *testing.T) {

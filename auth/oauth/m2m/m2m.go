@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/oauth"
 	"github.com/rs/zerolog/log"
+	"github.com/urimeba/databricks-sql-go/auth"
+	"github.com/urimeba/databricks-sql-go/auth/oauth"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 )

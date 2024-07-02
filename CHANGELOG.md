@@ -115,7 +115,7 @@ Fixing cancel race condition
 - Session parameters (e.g.: timezone)
 - Thrift Protocol update
 - Several logging improvements
-- Added better examples. See [workflow](https://github.com/databricks/databricks-sql-go/blob/main/examples/workflow/main.go)
+- Added better examples. See [workflow](https://github.com/urimeba/databricks-sql-go/blob/main/examples/workflow/main.go)
 - Added dbsql.NewConnector() function to help initialize DB
 - Many other small improvements and bug fixes
 - Removed support for client-side query parameterization
