@@ -10,16 +10,16 @@ import (
 )
 
 func init() {
-	sql.Register("databricks", &databricksDriver{})
+	sql.Register("databricks", &DatabricksDriver{})
 }
 
 var DriverVersion = "1.5.7" // update version before each release
 
-type databricksDriver struct{}
+type DatabricksDriver struct{}
 
 // Open returns a new connection to Databricks database with a DSN string.
 // Use sql.Open("databricks", <dsn string>) after importing this driver package.
-func (d *databricksDriver) Open(dsn string) (driver.Conn, error) {
+func (d *DatabricksDriver) Open(dsn string) (driver.Conn, error) {
 	cn, err := d.OpenConnector(dsn)
 	if err != nil {
 		return nil, err
@@ -29,7 +29,7 @@ func (d *databricksDriver) Open(dsn string) (driver.Conn, error) {
 
 // OpenConnector returns a new Connector.
 // Used by sql.DB to obtain a Connector and invoke its Connect method to obtain each needed connection.
-func (d *databricksDriver) OpenConnector(dsn string) (driver.Connector, error) {
+func (d *DatabricksDriver) OpenConnector(dsn string) (driver.Connector, error) {
 	ucfg, err := config.ParseDSN(dsn)
 	if err != nil {
 		return nil, err
@@ -37,5 +37,5 @@ func (d *databricksDriver) OpenConnector(dsn string) (driver.Connector, error) {
 	return NewConnector(withUserConfig(ucfg))
 }
 
-var _ driver.Driver = (*databricksDriver)(nil)
-var _ driver.DriverContext = (*databricksDriver)(nil)
+var _ driver.Driver = (*DatabricksDriver)(nil)
+var _ driver.DriverContext = (*DatabricksDriver)(nil)
